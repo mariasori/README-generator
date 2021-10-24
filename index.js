@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your README?',
+        message: 'What is the title of your project?',
         validate: nameInput => {
             if (nameInput) {
                 return true;
@@ -22,7 +22,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Provide a description of the README',
+        message: 'Provide a description of the project',
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
@@ -44,14 +44,91 @@ const questions = [
                 return false;
             }
         }
-    }
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usage of this project?',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            }   else {
+                console.log('You need to enter the project usage.')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Choose a license for this project:',
+        choices: [
+            "Apache",
+            "Boost",
+            "GNU",
+            "IBM",
+            "MIT",
+            "Mozilla",
+            "Open Database"
+        ]
+    },
+    {
+        type: 'input',
+        name: 'contributions',
+        message: 'What are the guidelines for contributing to this project?',
+        validate: contributionsInput => {
+            if (contributionsInput) {
+                return true;
+            }   else {
+                console.log('You need to enter contribution guidelines.')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'What are the test instructions for the project?',
+        validate: testsInput => {
+            if (testsInput) {
+                return true;
+            }   else {
+                console.log('Please provide test instructions.')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your Github username?',
+        validate: usernameInput => {
+            if (usernameInput) {
+                return true;
+            }   else {
+                console.log('Please provide your Github username.')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your e-mail address?',
+        validate: usernameInput => {
+            if (usernameInput) {
+                return true;
+            }   else {
+                console.log('Please provide your e-mail address.')
+                return false;
+            }
+        }
+    },
 ];
 
 const promptUser = () => {
     return inquirer.prompt(questions)
 };
-
-const data = []
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
