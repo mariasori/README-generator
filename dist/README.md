@@ -1,12 +1,12 @@
 
   
-# adsfasdf
+# Sample Project Title
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen) 
 <br />
 
 ## Description
-adsfadsf
+This is the description of the application for the README file.
 
 ## Table of Contents
 - [Description](#description)
@@ -18,22 +18,22 @@ adsfadsf
 - [Questions](#questions)
  
 ## Installation
-adsfadf
+This describes the installation process of the application.
 
 ## Usage
-asdfasdf
+This describes the application usage.
 
 ## License
 This application is covered by the MIT license. 
 
 ## Contributions
-afadf
+This describes how to contribute to the project.
 
 ## Tests
-adsfasd
+This describes tests for the application and how to run them.
 
 ## Questions
-Find me on GitHub: [asdfa](https://github.com/asdfa)
+Find me on GitHub: [githubusername](https://github.com/githubusername)
 <br />
-Email me with any questions: [dafsdfasd](mailto:dafsdfasd)
+Email me with any questions: [sampleemail@email.com](mailto:sampleemail@email.com)
 
