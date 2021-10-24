@@ -2,11 +2,10 @@
   
 # Sample Project Title
 
-![License](https://img.shields.io/badge/license-MIT-brightgreen) 
-<br />
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
 
 ## Description
-This is the description of the application for the README file.
+This is where the description of the application will go.
 
 ## Table of Contents
 - [Description](#description)
@@ -18,16 +17,16 @@ This is the description of the application for the README file.
 - [Questions](#questions)
  
 ## Installation
-This describes the installation process of the application.
+This describes the installation process for the application.
 
 ## Usage
 This describes the application usage.
 
 ## License
-This application is covered by the MIT license. 
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)  This project is covered by the IBM license.
 
 ## Contributions
-This describes how to contribute to the project.
+This describes the guidelines to contribute to the project.
 
 ## Tests
 This describes tests for the application and how to run them.
@@ -35,5 +34,5 @@ This describes tests for the application and how to run them.
 ## Questions
 Find me on GitHub: [githubusername](https://github.com/githubusername)
 <br />
-Email me with any questions: [sampleemail@email.com](mailto:sampleemail@email.com)
+Email me with any questions: [email@email.com](mailto:email@email.com)
 
