@@ -19,7 +19,7 @@ The user will need to install Node.js and inquirer to run the application.
 The application can be used to create complete README files for any project a user may have. 
 
 ## License
-This package is covered by the MIT license.
+This application is covered by the MIT license.
 
 ## Contributions
 Please contact [Maria Sori](mailto:mariasori87@gmail.com) if you would like to contribute to this project.
