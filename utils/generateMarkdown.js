@@ -1,3 +1,26 @@
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(data) {
+  if (data.license == 'Apache') {
+    return licensebadge = '![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)'
+  } else if (data.license == 'Boost') {
+    return licensebadge = '![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)'
+  } else if (data.license == 'GNU') {
+    return licensebadge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
+  } else if (data.license == 'IBM') {
+    return licensebadge = '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)'
+  } else if (data.license == 'MIT') {
+    return licensebadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+  } else if (data.license == 'Mozilla') {
+    return licensebadge = '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
+  } else if (data.license == 'Open Database') {
+    return licensebadge = '![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)'
+  }
+  else {
+    licensebadge = '';
+  }
+}
+
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -5,6 +28,10 @@ function generateMarkdown(data) {
 # ${data.title}
 
 ![License](https://img.shields.io/badge/license-${data.license}-brightgreen) 
+<br />
+${renderLicenseBadge(data)}
+<br />
+${licensebadge}
 <br />
 
 ## Description
@@ -26,7 +53,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-This application is covered by the ${data.license} license. 
+This application is covered by the following license: ${data.license} 
 
 ## Contributions
 ${data.contributions}

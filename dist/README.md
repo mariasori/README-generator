@@ -1,12 +1,16 @@
 
   
-# adsfasdf
+# adfad
 
-![License](https://img.shields.io/badge/license-MIT-brightgreen) 
+![License](https://img.shields.io/badge/license-Mozilla-brightgreen) 
+<br />
+![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
+<br />
+![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
 <br />
 
 ## Description
-adsfadsf
+adfasd
 
 ## Table of Contents
 - [Description](#description)
@@ -18,22 +22,22 @@ adsfadsf
 - [Questions](#questions)
  
 ## Installation
-adsfadf
+fadfadf
 
 ## Usage
-asdfasdf
+afdadsf
 
 ## License
-This application is covered by the MIT license. 
+This application is covered by the following license: Mozilla 
 
 ## Contributions
-afadf
+adfdaf
 
 ## Tests
-adsfasd
+adfadsf
 
 ## Questions
-Find me on GitHub: [asdfa](https://github.com/asdfa)
+Find me on GitHub: [adfadf](https://github.com/adfadf)
 <br />
-Email me with any questions: [dafsdfasd](mailto:dafsdfasd)
+Email me with any questions: [adf](mailto:adf)
 
