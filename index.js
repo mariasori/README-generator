@@ -69,6 +69,7 @@ const questions = [
             "MIT",
             "Mozilla",
             "Open Database",
+            "None"
         ]
     },
     {
