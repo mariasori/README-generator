@@ -31,3 +31,6 @@ No tests are provided for this project.
 Find me on GitHub: [mariasori](https://github.com/mariasori)
 <br />
 Email me with any questions: [mariasori87@gmail.com](mailto:mariasori87@gmail.com)
+
+## Video Walkthrough
+[Click here](https://watch.screencastify.com/v/lFtvfXVLp24dWtuuQzKF) to view the video walkthrough of the application.
