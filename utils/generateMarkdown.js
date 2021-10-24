@@ -2,27 +2,27 @@
 //If there is no license, return an empty string
 function renderLicenseBadge(data) {
   if (data.license == 'Apache') {
-    return licensebadge = '![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)'
+    return licensebadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)]'
   } else if (data.license == 'Boost') {
-    return licensebadge = '![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)'
+    return licensebadge = '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]'
   } else if (data.license == 'GNU') {
-    return licensebadge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
+    return licensebadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]'
   } else if (data.license == 'IBM') {
-    return licensebadge = '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)'
+    return licensebadge = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)]'
   } else if (data.license == 'MIT') {
-    return licensebadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+    return licensebadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
   } else if (data.license == 'Mozilla') {
-    return licensebadge = '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
+    return licensebadge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]'
   } else if (data.license == 'Open Database') {
-    return licensebadge = '![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)'
+    return licensebadge = '[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)]'
   }
   else {
-    licensebadge = '';
+    return licensebadge = '';
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//Create a function that returns the license link
+//If there is no license, return an empty string
 
 function renderLicenseLink(data) {  
   if (data.license == 'Apache') {
@@ -41,9 +41,21 @@ function renderLicenseLink(data) {
     return licenselink = '(https://opendatacommons.org/licenses/odbl/)'
   }
   else {
-    licenselink = '';
+    return licenselink = '';
   }
 }
+
+//Create a function that returns the license section of README
+//If there is no license, return an empty string
+function renderLicenseSection(data) {
+  if (data.license == "None") {
+    return licensesection = 'This project is not covered by any open source license.  All rights are reserved.'
+  }
+  else {
+    return licensesection = `${licensebadge}${licenselink}  This project is covered by the ${data.license} license.`
+  }
+}
+
 
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -51,10 +63,7 @@ function generateMarkdown(data) {
   
 # ${data.title}
 
-[${renderLicenseBadge(data)}]${renderLicenseLink(data)}
-<br />
-[${licensebadge}]${licenselink}
-<br />
+${renderLicenseBadge(data)}${renderLicenseLink(data)}
 
 ## Description
 ${data.description}
@@ -75,8 +84,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-[${licensebadge}]${licenselink}
-This application is covered by the following license: ${data.license} 
+${renderLicenseSection(data)}
 
 ## Contributions
 ${data.contributions}

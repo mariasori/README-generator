@@ -1,16 +1,11 @@
 
   
-# adsfasdfa
+# agafg
 
-![License](https://img.shields.io/badge/license-IBM-brightgreen) 
-<br />
-![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)
-<br />
-![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)
-<br />
+
 
 ## Description
-adsfasd
+afgafdgadfg
 
 ## Table of Contents
 - [Description](#description)
@@ -22,22 +17,22 @@ adsfasd
 - [Questions](#questions)
  
 ## Installation
-adsfasdfe
+adfgadfgadfga
 
 ## Usage
-yjjdg
+afa
 
 ## License
-This application is covered by the following license: IBM 
+This project is not covered by any open source license.  All rights are reserved.
 
 ## Contributions
-dghdghd
+adfadf
 
 ## Tests
-dghdgh
+adfasdfads
 
 ## Questions
-Find me on GitHub: [dghdgh](https://github.com/dghdgh)
+Find me on GitHub: [adsfadsf](https://github.com/adsfadsf)
 <br />
-Email me with any questions: [dfghd](mailto:dfghd)
+Email me with any questions: [aadsfdas](mailto:aadsfdas)
 
