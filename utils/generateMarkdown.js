@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//Create a function that returns a license badge based on which license is passed in
+//If there is no license, return an empty string
 function renderLicenseBadge(data) {
   if (data.license == 'Apache') {
     return licensebadge = '![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)'
@@ -21,17 +21,39 @@ function renderLicenseBadge(data) {
   }
 }
 
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+
+function renderLicenseLink(data) {  
+  if (data.license == 'Apache') {
+    return licenselink = '(https://opensource.org/licenses/Apache-2.0)'
+  } else if (data.license == 'Boost') {
+    return licenselink = '(https://www.boost.org/LICENSE_1_0.txt)'
+  } else if (data.license == 'GNU') {
+    return licenselink = '(https://www.gnu.org/licenses/gpl-3.0)   '
+  } else if (data.license == 'IBM') {
+    return licenselink = '(https://opensource.org/licenses/IPL-1.0)'
+  } else if (data.license == 'MIT') {
+    return licenselink = '(https://opensource.org/licenses/MIT)'
+  } else if (data.license == 'Mozilla') {
+    return licenselink = '(https://opensource.org/licenses/MPL-2.0)'
+  } else if (data.license == 'Open Database') {
+    return licenselink = '(https://opendatacommons.org/licenses/odbl/)'
+  }
+  else {
+    licenselink = '';
+  }
+}
+
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   
 # ${data.title}
 
-![License](https://img.shields.io/badge/license-${data.license}-brightgreen) 
+[${renderLicenseBadge(data)}]${renderLicenseLink(data)}
 <br />
-${renderLicenseBadge(data)}
-<br />
-${licensebadge}
+[${licensebadge}]${licenselink}
 <br />
 
 ## Description
@@ -53,6 +75,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
+[${licensebadge}]${licenselink}
 This application is covered by the following license: ${data.license} 
 
 ## Contributions
