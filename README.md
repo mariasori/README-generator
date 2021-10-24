@@ -1,7 +1,7 @@
 # Node.js Challenge - README Generator
 
 ## Description
-The purpose of this project is to create a README file generator using Node.js, inquirer, and fs.  Upon installation of node and inquirer, the user can rude the application and enter in all necessary information to fill in a complete README.md file.  
+The purpose of this project is to create a README file generator using Node.js, inquirer, and fs.  Upon installation of node and inquirer, the user can run the application and enter in all necessary information to fill in a complete README.md file.  
 
 ## Table of Contents
 - [Description](#description)
